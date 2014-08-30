@@ -1,4 +1,0 @@
-ggaulard.github.io
-==================
-
-Resume

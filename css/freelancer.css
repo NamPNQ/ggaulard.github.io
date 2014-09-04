@@ -181,11 +181,15 @@ section.alternate, section.alternate hr.star:after {
     background: #7F7361;
 }
 
-section.alternate h2, section.alternate h3, section.alternate h4, section.alternate h5, section.alternate, section.alternate hr.star:after {
+section.alternate2, section.alternate2 hr.star:after {
+    background: #FFC575;
+}
+
+section.alternate h2, section.alternate h3, section.alternate h4, section.alternate h5, section.alternate, section.alternate hr.star:after, section.alternate2 h2, section.alternate2 h3, section.alternate2 h4, section.alternate2 h5, section.alternate2, section.alternate2 hr.star:after {
     color: #fff;
 }
 
-section.alternate hr.star {
+section.alternate hr.star, section.alternate2 hr.star {
     border-color: #fff;
 }
 
@@ -241,28 +245,23 @@ section#about .subsection .collapsed i:before {
     content: "\f196";
 }
 
-section#contact paper-input {
-    width: 100%;
+section#contact .portrait {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url('../img/portrait.jpg') no-repeat;
+    background-size: contain;
+    margin: 0 auto;
 }
 
-section#contact .action{
+section#contact .col-md-4 {
     text-align: center;
 }
 
 section#contact {
-    position: relative;
-    overflow: hidden;
-}
-
-section#contact:before {
-    content: "\f0e0";
-    position: absolute;
-    font-family: FontAwesome;
-    bottom: -0.3em;
-    right: -0.02em;
-    font-size: 25em;
-    color: #FFC575;
-    opacity: 0.3;
+    padding-bottom: 0px;
 }
 
 @media (max-width: 767px) {
@@ -416,7 +415,7 @@ footer h3 {
 }
 
 footer .footer-above {
-    padding-top: 50px;
+    padding-top: 0px;
     background-color: #FFC575;
 }
 

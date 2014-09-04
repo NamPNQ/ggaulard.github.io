@@ -3,9 +3,12 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+@import url(http://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
 
 body {
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -31,47 +34,30 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Nothing You Could Do', cursive;
     font-weight: 700;
+    color: #7F7361;
 }
 
-hr.star-light,
-hr.star-primary {
+hr.star {
     margin: 25px auto 30px;
     padding: 0;
     max-width: 250px;
     border: 0;
-    border-top: solid 5px;
+    border-top: solid 2px;
     text-align: center;
+    border-color: #7F7361;
 }
 
-hr.star-light:after,
-hr.star-primary:after {
-    content: "\f005";
+hr.star:after {
+    content: "\f06c";
     display: inline-block;
     position: relative;
     top: -.8em;
     padding: 0 .25em;
     font-family: FontAwesome;
-    font-size: 2em;
-}
-
-hr.star-light {
-    border-color: #fff;
-}
-
-hr.star-light:after {
-    color: #fff;
-    background-color: #18bc9c;
-}
-
-hr.star-primary {
-    border-color: #2c3e50;
-}
-
-hr.star-primary:after {
-    color: #2c3e50;
+    font-size: 1.5em;
+    color: #7F7361;
     background-color: #fff;
 }
 
@@ -82,12 +68,13 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background: #7F7361 url("../img/header2.png") no-repeat center bottom;
+    background-size: cover;
 }
 
 header .container {
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 header img {
@@ -95,23 +82,26 @@ header img {
     margin: 0 auto 20px;
 }
 
+header .intro-text {
+}
+
 header .intro-text .name {
     display: block;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 700;
 }
 
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
+    background-color: #FFC575;
+    padding: 10px;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
     header .container {
         padding-top: 200px;
-        padding-bottom: 100px;
+        padding-bottom: 200px;
     }
 
     header .intro-text .name {
@@ -123,7 +113,7 @@ header .intro-text .skills {
     }
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
     .navbar-fixed-top {
         padding: 25px 0;
         -webkit-transition: padding .3s;
@@ -149,8 +139,11 @@ header .intro-text .skills {
 
 .navbar {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a, .navbar-default .navbar-toggle .icon-bar {
+    color: #7F7361;
 }
 
 .navbar a:focus {
@@ -170,6 +163,11 @@ header .intro-text .skills {
     border: 0;
 }
 
+.navbar .navbar-brand {
+    font-family: 'Nothing You Could Do', cursive;
+    text-transform: none;
+}
+
 section {
     padding: 100px 0;
 }
@@ -179,12 +177,95 @@ section h2 {
     font-size: 3em;
 }
 
-section.success {
-    color: #fff;
-    background: #18bc9c;
+section.alternate, section.alternate hr.star:after {
+    background: #7F7361;
 }
 
-@media(max-width:767px) {
+section.alternate h2, section.alternate h3, section.alternate h4, section.alternate h5, section.alternate, section.alternate hr.star:after {
+    color: #fff;
+}
+
+section.alternate hr.star {
+    border-color: #fff;
+}
+
+section#skills #radar {
+    width: 100%
+}
+
+section#skills #radar text {
+    color: #7F7361;
+}
+
+section#skills.loading #radar #mask {
+    opacity: 0.5;
+}
+
+section#skills.loading #radar #mask, section#skills.loading #radar #mask2, section#skills.loading #radar #lines, section#skills.loading #radar #dots {
+    opacity: 0;
+}
+
+section#about h4, section#about h5 {
+    font-family: 'Roboto', sans-serif;
+}
+
+section#about {
+    position: relative;
+    overflow: hidden;
+}
+
+section#about:before {
+    content: "\f007";
+    position: absolute;
+    font-family: FontAwesome;
+    bottom: -0.3em;
+    right: -0.02em;
+    font-size: 25em;
+    color: #FFC575;
+    opacity: 0.3;
+}
+
+section#about .subsection {
+    margin-top: 50px;
+}
+
+section#about a:hover {
+    text-decoration: none;
+}
+
+section#about .subsection i:before {
+    content: "\f147";
+}
+
+section#about .subsection .collapsed i:before {
+    content: "\f196";
+}
+
+section#contact paper-input {
+    width: 100%;
+}
+
+section#contact .action{
+    text-align: center;
+}
+
+section#contact {
+    position: relative;
+    overflow: hidden;
+}
+
+section#contact:before {
+    content: "\f0e0";
+    position: absolute;
+    font-family: FontAwesome;
+    bottom: -0.3em;
+    right: -0.02em;
+    font-size: 25em;
+    color: #FFC575;
+    opacity: 0.3;
+}
+
+@media (max-width: 767px) {
     section {
         padding: 75px 0;
     }
@@ -211,7 +292,7 @@ section.success {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
+    background: rgba(24, 188, 156, .9);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -245,7 +326,7 @@ section.success {
     z-index: 2;
 }
 
-@media(min-width:767px) {
+@media (min-width: 767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
@@ -286,7 +367,7 @@ section.success {
     border-radius: 0;
     font-size: 1.5em;
     background: 0 0;
-    box-shadow: none!important;
+    box-shadow: none !important;
     resize: none;
 }
 
@@ -301,10 +382,10 @@ section.success {
     vertical-align: middle;
     vertical-align: baseline;
     opacity: 0;
-    -webkit-transition: top .3s ease,opacity .3s ease;
-    -moz-transition: top .3s ease,opacity .3s ease;
-    -ms-transition: top .3s ease,opacity .3s ease;
-    transition: top .3s ease,opacity .3s ease;
+    -webkit-transition: top .3s ease, opacity .3s ease;
+    -moz-transition: top .3s ease, opacity .3s ease;
+    -ms-transition: top .3s ease, opacity .3s ease;
+    transition: top .3s ease, opacity .3s ease;
 }
 
 .floating-label-form-group::not(:first-child) {
@@ -330,12 +411,13 @@ footer {
 }
 
 footer h3 {
+    color: #fff;
     margin-bottom: 30px;
 }
 
 footer .footer-above {
     padding-top: 50px;
-    background-color: #2c3e50;
+    background-color: #FFC575;
 }
 
 footer .footer-col {
@@ -344,7 +426,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #233140;
+    background-color: #FFC575;
 }
 
 .btn-social {
@@ -356,6 +438,10 @@ footer .footer-below {
     text-align: center;
     font-size: 20px;
     line-height: 45px;
+}
+
+.btn-social:hover {
+    color: #FFC575;
 }
 
 .btn:focus,
@@ -442,4 +528,20 @@ footer .footer-below {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+.panel {
+    margin-bottom: 0px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+::selection {
+    background: #FFC575;
+}
+::-moz-selection {
+    background: #FFC575;
 }

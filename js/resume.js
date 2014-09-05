@@ -29,7 +29,7 @@ $(function () {
     var scale = 0;
 
     var box = radar.getBBox();
-    var c = {x: box.cx + 9, y: box.cy}
+    var c = {x: box.cx, y: box.cy};
 
     function animate() {
         radarGroup.transform('s0,' + c.x + ',' + c.y)
@@ -54,6 +54,28 @@ $(function () {
                 animated = true;
             }
         }
+    });
 
+    $('.portfolio-modal').on('show.bs.modal', function (e) {
+        var l = $(this).find('.youtube-video');
+        if(l.length != 0){
+            l.hide();
+            l.append('<iframe ' +
+                'src="https://www.youtube.com/embed/'+ l.attr('data-video')+'?color=white&theme=light&showinfo=0&rel=0&modestbranding=1" ' +
+                'frameborder="0" ' +
+                'allowfullscreen="true">' +
+                '</iframe>');
+            setTimeout(function () {
+                l.show();
+                l.fitVids();
+            }, 400);
+        }
+    });
+
+    $('.portfolio-modal').on('hide.bs.modal', function (e) {
+        var l = $(this).find('.youtube-video');
+        if(l.length != 0){
+            l.html('');
+        }
     });
 });

@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd97dae3-8a8a-4b5e-9ad4-8f570bc7616e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/portrait.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/profile.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/portfolio/bpi.png" afterPath="$PROJECT_DIR$/img/portfolio/bpi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/portfolio/dailymotion.png" afterPath="$PROJECT_DIR$/img/portfolio/dailymotion.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/portfolio/empty.png" afterPath="$PROJECT_DIR$/img/portfolio/empty.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/portfolio/hoppertiz.png" afterPath="$PROJECT_DIR$/img/portfolio/hoppertiz.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/portfolio/hquest.png" afterPath="$PROJECT_DIR$/img/portfolio/hquest.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/portfolio/lvmh.png" afterPath="$PROJECT_DIR$/img/portfolio/lvmh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/portfolio/twincorp.png" afterPath="$PROJECT_DIR$/img/portfolio/twincorp.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/freelancer.css" afterPath="$PROJECT_DIR$/css/freelancer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/resume.js" afterPath="$PROJECT_DIR$/js/resume.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/w.html" afterPath="$PROJECT_DIR$/w.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ggaulard.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,21 +44,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resume.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="resume.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/resume.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.85871273" vertical-offset="683" max-vertical-offset="1335">
+            <state vertical-scroll-proportion="-47.307693" vertical-offset="0" max-vertical-offset="1335">
               <caret line="82" column="34" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="freelancer.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="freelancer.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/freelancer.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.166667" vertical-offset="180" max-vertical-offset="9825">
-              <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.5418719" vertical-offset="1275" max-vertical-offset="9825">
+              <caret line="107" column="46" selection-start-line="107" selection-start-column="46" selection-end-line="107" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -78,8 +84,8 @@
         <option value="$PROJECT_DIR$/components/paper-input/paper-input.css" />
         <option value="$PROJECT_DIR$/components/paper-input/paper-input.html" />
         <option value="$PROJECT_DIR$/w.html" />
-        <option value="$PROJECT_DIR$/css/freelancer.css" />
         <option value="$PROJECT_DIR$/js/resume.js" />
+        <option value="$PROJECT_DIR$/css/freelancer.css" />
       </list>
     </option>
   </component>
@@ -482,12 +488,12 @@
       <workItem from="1409953050162" duration="78000" />
       <workItem from="1410019197082" duration="81000" />
       <workItem from="1410019867037" duration="4133000" />
-      <workItem from="1410104986547" duration="3088000" />
+      <workItem from="1410104986547" duration="3324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36659000" />
+    <option name="totallyTimeSpent" value="36895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -800,14 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/freelancer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.166667" vertical-offset="180" max-vertical-offset="9825">
-          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/w.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.3846154" vertical-offset="30" max-vertical-offset="12555">
@@ -818,8 +816,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/resume.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85871273" vertical-offset="683" max-vertical-offset="1335">
+        <state vertical-scroll-proportion="-47.307693" vertical-offset="0" max-vertical-offset="1335">
           <caret line="82" column="34" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/freelancer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5418719" vertical-offset="1275" max-vertical-offset="9825">
+          <caret line="107" column="46" selection-start-line="107" selection-start-column="46" selection-end-line="107" selection-end-column="46" />
           <folding />
         </state>
       </provider>

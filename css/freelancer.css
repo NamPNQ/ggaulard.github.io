@@ -34,16 +34,16 @@ body.loading {
     margin: 0 auto;
 }
 
-#loading div i{
+#loading div i {
     font-size: 3em;
 }
 
-#loading div span:first-child{
+#loading div span:first-child {
     display: block;
     padding: 2em;
 }
 
-#loading div span{
+#loading div span {
     display: block;
     padding-bottom: 2em;
 }
@@ -107,7 +107,6 @@ header {
     color: #fff;
     background: #7F7361 url("../img/header.jpg") no-repeat center bottom;
     background-size: cover;
-/ / border-top : 156 px solid #FFC575;
 }
 
 header .container {

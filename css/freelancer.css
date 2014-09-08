@@ -4,11 +4,48 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 @import url(http://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
-@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
 
 body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
+}
+
+body.loading {
+    overflow: hidden;
+}
+
+#loading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f8f8f8;
+    z-index: 1031;
+}
+
+#loading div {
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: 700;
+    color: #7F7361;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#loading div i{
+    font-size: 3em;
+}
+
+#loading div span:first-child{
+    display: block;
+    padding: 2em;
+}
+
+#loading div span{
+    display: block;
+    padding-bottom: 2em;
 }
 
 p {
@@ -70,6 +107,7 @@ header {
     color: #fff;
     background: #7F7361 url("../img/header2.png") no-repeat center bottom;
     background-size: cover;
+/ / border-top : 156 px solid #FFC575;
 }
 
 header .container {
@@ -332,7 +370,7 @@ section#presentation p {
     z-index: 2;
 }
 
-#portfolio .portfolio-item .portfolio-picture{
+#portfolio .portfolio-item .portfolio-picture {
     border-radius: 50%;
     width: 57.77%;
     height: 80%;
@@ -343,40 +381,40 @@ section#presentation p {
     z-index: 1;
 }
 
-#portfolio .portfolio-item .portfolio-orange{
+#portfolio .portfolio-item .portfolio-orange {
     background-color: #FFC575;
 }
 
-#portfolio .portfolio-item .portfolio-brown{
+#portfolio .portfolio-item .portfolio-brown {
     background-color: #7F7361;
 }
 
-#portfolio .portfolio-item .portfolio-picture.hoppertiz{
+#portfolio .portfolio-item .portfolio-picture.hoppertiz {
     background: url("../img/portfolio/hoppertiz.png") no-repeat;
     background-size: cover;
 }
 
-#portfolio .portfolio-item .portfolio-picture.twincorp{
+#portfolio .portfolio-item .portfolio-picture.twincorp {
     background: url("../img/portfolio/twincorp.png") no-repeat;
     background-size: cover;
 }
 
-#portfolio .portfolio-item .portfolio-picture.lvmh{
+#portfolio .portfolio-item .portfolio-picture.lvmh {
     background: url("../img/portfolio/lvmh.png") no-repeat;
     background-size: cover;
 }
 
-#portfolio .portfolio-item .portfolio-picture.dailymotion{
+#portfolio .portfolio-item .portfolio-picture.dailymotion {
     background: url("../img/portfolio/dailymotion.png") no-repeat;
     background-size: cover;
 }
 
-#portfolio .portfolio-item .portfolio-picture.bpi{
+#portfolio .portfolio-item .portfolio-picture.bpi {
     background: url("../img/portfolio/bpi.png") no-repeat;
     background-size: cover;
 }
 
-#portfolio .portfolio-item .portfolio-picture.hquest{
+#portfolio .portfolio-item .portfolio-picture.hquest {
     background: url("../img/portfolio/hquest.png") no-repeat;
     background-size: cover;
 }
@@ -545,7 +583,7 @@ footer .footer-below {
     text-align: center;
 }
 
-.portfolio-modal .modal-content button{
+.portfolio-modal .modal-content button {
     float: right;
 }
 
@@ -584,7 +622,7 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
-.portfolio-modal .youtube-video{
+.portfolio-modal .youtube-video {
     margin: 60px 0;
 }
 

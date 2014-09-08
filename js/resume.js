@@ -78,4 +78,7 @@ $(function () {
             l.html('');
         }
     });
+
+    $('#loading').remove();
+    $('body').removeClass('loading');
 });

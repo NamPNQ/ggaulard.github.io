@@ -624,8 +624,8 @@ footer .footer-below {
     text-align: center;
 }
 
-.portfolio-modal .modal-content button {
-    float: right;
+.portfolio-modal .modal-footer {
+    text-align: center;
 }
 
 .portfolio-modal .close-modal {
@@ -636,6 +636,10 @@ footer .footer-below {
     height: 75px;
     background-color: transparent;
     cursor: pointer;
+}
+
+.portfolio-modal .modal-content svg{
+    width: 100%;
 }
 
 .portfolio-modal .close-modal:hover {
@@ -665,6 +669,44 @@ footer .footer-below {
 
 .portfolio-modal .youtube-video {
     margin: 60px 0;
+}
+
+.portfolio-modal .youtube-video img{
+    width: 100%;
+    height: auto;
+    max-height: none;
+    max-width: none;
+    cursor: pointer;
+}
+
+.portfolio-modal#bpi .youtube-video{
+    background: #fff url("../img/portfolio/bpi.png") no-repeat center bottom;
+    background-size: contain;
+}
+
+.portfolio-modal#dailymotion .youtube-video{
+    background: #fff url("../img/portfolio/dailymotion.png") no-repeat center bottom;
+    background-size: contain;
+}
+
+.portfolio-modal#hoppertiz .youtube-video{
+    background: #fff url("../img/portfolio/hoppertiz.png") no-repeat center bottom;
+    background-size: contain;
+}
+
+.portfolio-modal#hquest .youtube-video{
+    background: #fff url("../img/portfolio/hquest.png") no-repeat center bottom;
+    background-size: contain;
+}
+
+.portfolio-modal#lvmh .youtube-video{
+    background: #fff url("../img/portfolio/lvmh.png") no-repeat center bottom;
+    background-size: contain;
+}
+
+.portfolio-modal#twincorp .youtube-video{
+    background: #fff url("../img/portfolio/twincorp.png") no-repeat center bottom;
+    background-size: contain;
 }
 
 .panel {

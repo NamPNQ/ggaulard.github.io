@@ -15,6 +15,15 @@ body.loading {
     overflow: hidden;
 }
 
+a{
+    color: #7F7361 !important;
+}
+
+a:hover, a:active, a:visited, a:focus{
+    color: #7F7361;
+    opacity: 0.8 !important;
+}
+
 #loading {
     position: absolute;
     top: 0;
@@ -205,28 +214,32 @@ header .intro-text .skills {
     text-transform: none;
 }
 
-section {
+section, footer {
     padding: 100px 0;
 }
 
-section h2 {
+footer {
+    padding-bottom: 0;
+}
+
+section h2, footer h2{
     margin: 0;
     font-size: 3em;
 }
 
-section.alternate, section.alternate hr.star:after {
+.alternate, .alternate hr.star:after {
     background: #7F7361;
 }
 
-section.alternate2, section.alternate2 hr.star:after {
+.alternate2, .alternate2 hr.star:after {
     background: #FFC575;
 }
 
-section.alternate h2, section.alternate h3, section.alternate h4, section.alternate h5, section.alternate, section.alternate hr.star:after, section.alternate2 h2, section.alternate2 h3, section.alternate2 h4, section.alternate2 h5, section.alternate2, section.alternate2 hr.star:after {
+.alternate h2, .alternate h3, .alternate h4, .alternate h5, .alternate, .alternate hr.star:after, .alternate2 h2, .alternate2 h3, .alternate2 h4, .alternate2 h5, .alternate2, .alternate2 hr.star:after {
     color: #fff;
 }
 
-section.alternate hr.star, section.alternate2 hr.star {
+.alternate hr.star, .alternate2 hr.star {
     border-color: #fff;
 }
 
@@ -498,7 +511,7 @@ footer {
 
 footer h3 {
     color: #fff;
-    margin-bottom: 30px;
+    margin: 60px 0 30px;
 }
 
 footer .footer-above {
@@ -512,6 +525,29 @@ footer .footer-above ul{
 
 footer .footer-col {
     margin-bottom: 50px;
+}
+
+footer .footer-col, footer .footer-col ul, footer .footer-col ul li {
+    padding: 0px
+}
+
+footer .footer-col ul li {
+    margin-top: -10px;
+    width: 100%;
+}
+
+footer .footer-col ul li a {
+    display: block;
+    height: 60px;
+    margin: 0 auto;
+}
+
+footer .footer-col ul.around-web li a {
+    width: 310px;
+}
+
+footer .footer-col ul.resume li a {
+    width: 310px;
 }
 
 footer .footer-below {
@@ -529,10 +565,12 @@ footer .footer-below {
 }
 
 .btn-social .title, .btn-social .description{
-    width: 100px;
+    width: 130px;
     display: block;
     float: left;
-    padding: 30px 5px 30px 5px;
+    padding: 10px 5px 0px 5px;
+    font-size: 20px;
+    color: #fff !important;
 }
 
 .btn-social .title {
@@ -544,7 +582,7 @@ footer .footer-below {
 }
 
 .btn-social .icon {
-    margin-top: 15px;
+    margin: 0 0 10px;
     border: solid 2px #fff;
     font-size: 20px;
     color: #fff;
@@ -626,6 +664,7 @@ footer .footer-below {
 
 .portfolio-modal .modal-footer {
     text-align: center;
+    padding: 0;
 }
 
 .portfolio-modal .close-modal {
@@ -667,8 +706,19 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
+.portfolio-modal button.close-modal {
+    position: static;
+    top: 25px;
+    right: 25px;
+    height: auto;
+    background-color: transparent;
+    cursor: pointer;
+    width: 191px;
+    border: 1px solid #e5e5e5
+}
+
 .portfolio-modal .youtube-video {
-    margin: 60px 0;
+    margin: 30px 0 20px;
 }
 
 .portfolio-modal .youtube-video img{
@@ -680,33 +730,38 @@ footer .footer-below {
 }
 
 .portfolio-modal#bpi .youtube-video{
-    background: #fff url("../img/portfolio/bpi.png") no-repeat center bottom;
-    background-size: contain;
+    background: #fff url("../img/portfolio/bpi.png") no-repeat center center;
+    background-size: 70%;
 }
 
 .portfolio-modal#dailymotion .youtube-video{
-    background: #fff url("../img/portfolio/dailymotion.png") no-repeat center bottom;
-    background-size: contain;
+    background: #fff url("../img/portfolio/dailymotion.png") no-repeat center center;
+    background-size: 70%;
 }
 
 .portfolio-modal#hoppertiz .youtube-video{
-    background: #fff url("../img/portfolio/hoppertiz.png") no-repeat center bottom;
-    background-size: contain;
+    background: #fff url("../img/portfolio/hoppertiz.png") no-repeat center center;
+    background-size: 70%;
 }
 
 .portfolio-modal#hquest .youtube-video{
-    background: #fff url("../img/portfolio/hquest.png") no-repeat center bottom;
-    background-size: contain;
+    background: #fff url("../img/portfolio/hquest.png") no-repeat center center;
+    background-size: 70%;
 }
 
 .portfolio-modal#lvmh .youtube-video{
-    background: #fff url("../img/portfolio/lvmh.png") no-repeat center bottom;
-    background-size: contain;
+    background: #fff url("../img/portfolio/lvmh.png") no-repeat center center;
+    background-size: 70%;
 }
 
 .portfolio-modal#twincorp .youtube-video{
-    background: #fff url("../img/portfolio/twincorp.png") no-repeat center bottom;
-    background-size: contain;
+    background: #fff url("../img/portfolio/twincorp.png") no-repeat center center;
+    background-size: 70%;
+}
+
+.portfolio-modal .modal-footer button{
+    padding: 8px 60px;
+    text-transform: uppercase;
 }
 
 .panel {

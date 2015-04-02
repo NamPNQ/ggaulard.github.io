@@ -45,6 +45,34 @@ var charts = {
         }
     ],
 
+    planipsy : [
+        {
+            value: 40,
+            label: 'Front',
+            color: '#7F623A'
+        },
+        {
+            value: 20,
+            label: 'UX / Design',
+            color: '#FFE5C1'
+        },
+        {
+            value: 20,
+            label: 'Back',
+            color: '#7F7361'
+        },
+        {
+            value: 10,
+            label: 'Architecture',
+            color: '#CC9E5E'
+        },
+        {
+            value: 10,
+            label: 'Management',
+            color: '#FFC575'
+        }
+    ],
+
     hoppertiz : [
         {
             value: 40,

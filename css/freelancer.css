@@ -401,6 +401,11 @@ section#presentation p {
     background-color: #7F7361;
 }
 
+#portfolio .portfolio-item .portfolio-picture.planipsy {
+    background: url("../img/portfolio/planipsy.png") no-repeat;
+    background-size: cover;
+}
+
 #portfolio .portfolio-item .portfolio-picture.hoppertiz {
     background: url("../img/portfolio/hoppertiz.png") no-repeat;
     background-size: cover;
@@ -741,6 +746,11 @@ footer .footer-below {
 
 .portfolio-modal#hoppertiz .youtube-video{
     background: #fff url("../img/portfolio/hoppertiz.png") no-repeat center center;
+    background-size: 70%;
+}
+
+.portfolio-modal#planipsy .youtube-video{
+    background: #fff url("../img/portfolio/planipsy.png") no-repeat center center;
     background-size: 70%;
 }
 
